@@ -11,18 +11,18 @@ public class CreateNewWebsite {
 
         while (true){
             System.out.println("1 - Easy web site\n2 - Medium web site\n3 - Hard web site");
-            switch (scanner.next()){
-                case ("1"):
+            switch (scanner.nextInt()){
+                case (1):
                     director.setBuilder(new EasyWebsite());
                     website = director.buildWebsite();
                     System.out.println(website);
                     return;
-                case ("2"):
+                case (2):
                     director.setBuilder(new MediumWebsite());
                     website = director.buildWebsite();
                     System.out.println(website);
                     return;
-                case ("3"):
+                case (3):
                     director.setBuilder(new HardWebsite());
                     website = director.buildWebsite();
                     System.out.println(website);
